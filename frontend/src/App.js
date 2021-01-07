@@ -31,7 +31,7 @@ import Shop from './sectionsByEoin/Shop';
 import Takeaway from './sectionsByEoin/Takeaway';
 import EditTakeaway from './sectionsByEoin/EditTakeaway';
 import Blog from './sectionsByEoin/Blog';
-
+import Footer from './sectionsByEoin/Footer';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -136,6 +136,7 @@ function App() {
 
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
