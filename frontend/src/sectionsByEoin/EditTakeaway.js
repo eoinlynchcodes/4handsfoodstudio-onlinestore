@@ -119,7 +119,7 @@ function EditTakeaway(props) {
     axios
       .get("/api/products/")
       .then((response) => {
-        setTakeawayData(response.data);
+        setTakeawayData(response.data.products);
       })
       .catch((error) => {
         return error.message;
@@ -138,7 +138,7 @@ function EditTakeaway(props) {
       <div>
         <h2>Menu currently online</h2>
         {takeawayData.map((takeaway) => {
-          if (takeaway.isTakeaway === !null) {
+          if (takeaway.isTakeaway === true) {
             return (
               <div className="menuTakeawaySection">
                 <div>
@@ -151,9 +151,17 @@ function EditTakeaway(props) {
                   </h4>
                   <p> {takeaway.mainITems}</p>
                   <p> {takeaway.courseText}</p>
-                  {takeaway.price ? <p>Price: <u>€{takeaway.price}</u></p> : null}
-                  {takeaway.countInStock ? <p>Quantity available: <u>{takeaway.countInStock}</u></p> : null}
-                  
+                  {takeaway.price ? (
+                    <p>
+                      Price: <u>€{takeaway.price}</u>
+                    </p>
+                  ) : null}
+                  {takeaway.countInStock ? (
+                    <p>
+                      Quantity available: <u>{takeaway.countInStock}</u>
+                    </p>
+                  ) : null}
+
                   <p>{takeaway.mainItems}</p>
                 </div>
                 {takeaway.pickupPoints ? (
@@ -162,13 +170,11 @@ function EditTakeaway(props) {
                 {takeaway.otherinfo ? (
                   <div>Other Info: {takeaway.otherinfo}</div>
                 ) : null}
-                <button onClick={() => deleteHandler(takeaway)}>
-                    Delete
-                  </button>
+                <button onClick={() => deleteHandler(takeaway)}>Delete</button>
               </div>
             );
           } else {
-            return <h1>Hi there</h1>;
+            return null;
           }
         })}
       </div>
@@ -278,7 +284,7 @@ function EditTakeaway(props) {
             rows="6"
             onChange={(event) => handleChangeDetails(event)}
           />
-          <br/>
+          <br />
 
           <label>Other Information to Add:</label>
           <textarea

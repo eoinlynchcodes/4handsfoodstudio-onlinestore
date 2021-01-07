@@ -1,4 +1,3 @@
-import Axios from 'axios';
 import axios from 'axios';
 
 import { TAKEAWAY_DATA_REQUEST, TAKEAWAY_DATA_RECEIVED, TAKEAWAY_DATA_ERROR, TAKEAWAY_DELETE_REQUEST, TAKEAWAY_DELETE_SUCCESS, TAKEAWAY_DELETE_ERROR } from '../constants/takeawayConstants';

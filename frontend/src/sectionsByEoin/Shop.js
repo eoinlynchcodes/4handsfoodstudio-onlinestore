@@ -71,7 +71,8 @@ function Shop(props) {
         </div>
         <hr className="bottomHR" />
       </section> */}
-       <section className="products-section">
+      <div className="containerByEoin">
+        <section className="products-section">
           <div className="product-padding-section">
             {/* <h1 id="products">Products</h1> */}
             <p>More products will be available here soon.</p>
@@ -100,12 +101,12 @@ function Shop(props) {
                             {product.name}
                           </Link>
                         </div>
-                     
+
                         <div className="product-price pad">
                           {" "}
                           {product.price ? `€ ${product.price}` : null}
                         </div>
-              
+
                         <div className="buttonDivHomepageProduct">
                           <div className="button primary fifty">More Info</div>
                           {product.countInStock > 0 ? (
@@ -138,6 +139,7 @@ function Shop(props) {
             )}
           </div>
         </section>
+      </div>
       <div className="vl"></div>
     </section>
   );
