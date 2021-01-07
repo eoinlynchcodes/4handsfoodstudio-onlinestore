@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 import MessageBox from '../components/MessageBox';
 import Navigation from "../components/Navigation.js";
-import Footer from '../components/Footer.js';
+// import Footer from '../components/Footer.js';
 import { userAddressMapReducer } from '../reducers/userReducers';
 
 export default function CartScreen(props) {
@@ -177,7 +177,7 @@ export default function CartScreen(props) {
         </button>
       </div>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
   </section>
   );
 }

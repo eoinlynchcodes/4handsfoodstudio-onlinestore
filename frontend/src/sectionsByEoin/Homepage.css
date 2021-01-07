@@ -1,0 +1,493 @@
+html {
+  color: #5f6366;
+}
+.homepageContainer {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.homeImages {
+  width: 100%;
+  overflow: hidden;
+}
+
+.homepageContainer{
+  background-color: white;
+}
+
+@media only screen and (max-width: 1200px){
+  .homepageContainer{
+    border-left: .5px solid black;
+    border-right: .5px solid black;
+  }
+
+  .homepageFirstPiece{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paraforalignment{
+    margin: 0 auto;
+    width: 80%;
+    padding: 4rem 0rem;
+
+  }
+
+  .vl{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  .homepageContainer{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .homeImages{
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .flexRoseAndMargaux{
+    flex-direction: column;
+  }
+  .aboutText{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .blackBackgroundAbout{
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .blackBackgroundAbout img{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #straightenOutRose{
+    flex-direction: column;
+  }
+
+  #straightenOutMargaux{
+    flex-direction: column-reverse;
+  }
+
+  .homepageSection{
+    padding: 0em 0em;
+  }
+
+  .shippingScreenToFitMobile .form .form-container{
+    width: 100%;
+  }
+}
+
+.checkout-steps{
+  max-width: 90%;
+}
+
+.redText{
+  color: red;
+}
+
+.homeImages img {
+  width: 100%;
+}
+
+.leftHandSide {
+  width: 60%;
+  /* margin: auto 0; */
+}
+
+.rightHandSide {
+  width: 40%;
+  /* margin: auto 0; */
+}
+.first{
+  width: 55%;
+}
+
+.second{
+  width: 45%;
+}
+
+.linkToNormalise{
+  color: black;
+}
+
+.homepageSection{
+  margin: 0 auto;
+  padding: 4em 4em;
+
+}
+
+#thisOneVL{
+  border-left: 1px solid black;
+  height: 1fr;
+  margin: 5rem auto;
+}
+
+.visionText{
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.redButton{
+  max-width: 80%;
+}
+
+#orangeButton{
+  border-color: #AD612A;
+}
+
+#greenButton{
+  border-color: #405449;
+  margin-top: 7rem;
+}
+
+.sideborders{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .homepageContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+
+  #greenButton{
+    margin: 0 auto;
+  }
+
+  .homepageFirstPiece{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homepageSection{
+    width: 100%;
+  }
+
+  .first{
+    width: 80%;
+    height: auto;
+  }
+
+  .second{
+    width: 80%;
+  }
+
+  .paraforalignment{
+    margin: 0 auto;
+  }
+
+  #thisOneVL{
+    display: none;
+  }
+
+  .redButton{
+    margin: 0 auto;
+  }
+
+  .sideborders{
+    border: none;
+  }
+
+  .homepageSection{
+    padding: 4em 0em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .yellow{
+    margin: 0 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  header{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;  
+  }
+
+  .fourHandsHeadingText{
+    font-size: 1em;
+  }
+
+  .fourHandsHeadingText{
+      margin: 0 auto;
+      display: inline;
+    }
+
+
+}
+
+.linksToFlex{
+  display: flex;
+  
+}
+
+
+.homepagebox {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  background-color: white;
+  height: 45rem;
+  align-content: space-around;
+}
+
+.paragraph{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blacken{
+  color: black;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 1fr;
+  margin: 5rem auto;
+}
+
+.vlAbout{
+    border-left: 1px solid black;
+    height: 325px;
+    margin: 5rem auto;
+}
+
+.redButton{
+  border: 5px solid black;
+  margin: 0 auto;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  cursor: crosshair;
+  color: black;
+}
+
+.newsletterForm{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.blackOutlineButton{
+  border: 3px solid black;
+  margin: 5rem auto 0rem auto;
+  padding: 1em 2em;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  cursor: crosshair;
+}
+
+.coloredBox {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.extraMargin{
+  margin: 5rem auto 0rem auto;
+}
+
+.centreThisHereText{
+  text-align: center;
+}
+
+.violet {
+  color: #AD612A;
+  background-color: #F0F0F0;
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.orange{
+  background-color: #F4C1A8;
+  color: white;
+}
+
+.red{
+  background-color: lightslategray;
+  color: white;
+}
+
+.lime{
+   background-color: #F4C1A8;
+   color: white;
+}
+
+.black{
+  background-color: black;
+  color: white;
+}
+
+.whiteBox{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.green {
+  background-color: #F0F0F0;
+  color: #405449;
+  display: flex;
+  justify-content: center;
+}
+
+.yellow {
+  background-color: #E0B930;
+  color: #4D453A;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.blue {
+  background-color: #418fde;
+  color: white;
+}
+
+.yellowText{
+  color: #E0B930;
+}
+
+.white {
+  padding: 4em 0em;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#principles ul li {
+  text-decoration: none;
+}
+
+.flexRoseAndMargaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.aboutText{
+flex-basis: 50%;
+}
+
+.visionText{
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.principlesbox{
+  margin: 0 auto;
+}
+
+.aboutMainText{
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  padding: 4em 0em;
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm input {
+  width: 100%;
+}
+
+.headingColours{
+  color: black;
+  background-color: #f4c1a8;
+  padding: 0em .25em;
+  display: flex;
+  flex-direction: row;
+}
+
+.paraforalignment{
+  text-align: center;
+  height: auto;
+}
+
+#centeringTakeaway{
+  display: flex;
+  align-items: center;
+}
+
+.centreNewsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.blackBackgroundAbout p{
+  padding: 2em 2em;
+  background-color: #333333;
+  color: white;
+  margin: 0 auto; 
+}
+
+.bottomHR{
+  margin: 0 auto;
+  width: 50%;
+}
+
+.removeBullets li{
+  list-style-type: none;
+}
+
+.changeMouse{
+  cursor: pointer;
+}
+
+.contacform{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.submitButton{
+  width: 50%;
+  border: 2px solid black;
+  color: white;
+  background-color: red;
+}
+
+.table{
+  width: 80%;
+  margin: 0 auto;
+}
+
+td, th{
+  border: 1px solid #333333;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #dddddd;
+}

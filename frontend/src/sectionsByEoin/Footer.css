@@ -1,0 +1,140 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    padding: 4rem;
+    height: .75fr;
+}
+
+footer a{
+    color: white;
+
+ }
+
+.links{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5rem 0rem;
+}
+
+nav{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerHeading{
+    color: white;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    border: 5px solid white;
+    width: 50%;
+    padding: 2rem;
+    margin: 5rem auto;
+}
+
+.subscribeButton{
+    background-color: black;
+    color: red
+}
+
+.widthfifty{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .links{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    footer{
+        padding: 0rem;
+    }
+
+    .links nav{
+        display: none;
+    }
+
+    .dancingFont{
+        display: none;
+    }
+
+    .footerHeading{
+        width: 90%;
+    }
+
+
+    .footerNavigation{
+        width: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .newsLetterSignupFlex{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .thisDivIsfifty{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+}
+
+#centreTheNLText{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.thisDivIsfifty{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.blackenThisEoinLynch{
+    background-color: black;
+}
+
+
+
+.footerNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

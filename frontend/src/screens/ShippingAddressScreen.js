@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { saveShippingAddress } from "../actions/cartActions";
 import CheckoutSteps from "../components/CheckoutSteps";
-import Footer from "../components/Footer";
 import { savePaymentMethod } from "../actions/cartActions";
 
 export default function ShippingAddressScreen(props) {
@@ -156,7 +155,6 @@ export default function ShippingAddressScreen(props) {
         </form>
       </div>
       <br />
-      <Footer />
     </div>
   );
 }
