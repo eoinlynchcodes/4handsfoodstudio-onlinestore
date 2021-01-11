@@ -42,8 +42,7 @@ function EditTakeaway(props) {
 
   const handleSubmitMain = (event) => {
     event.preventDefault();
-    axios
-      .post("/api/products/", main)
+    axios.post("/api/products/", main)
       .then((response) => {
         setMain(response.data);
         window.location.reload();

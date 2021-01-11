@@ -45,28 +45,8 @@ export default function ShippingAddressScreen(props) {
   return (
 
     <div>
-      {/* <CheckoutSteps step1 step2></CheckoutSteps> */}
       <div className="form">
         <form onSubmit={submitHandler}>
-          {/* <ul className="form-container">
-            <li>
-              <h2>Payment</h2>
-            </li>
-
-            <li>
-              <div>
-                <input
-                  type="radio"
-                  name="paymentMethod"
-                  id="paymentMethod"
-                  value="paypal"
-                  onChange={(e) => setPaymentMethod(e.target.value)}
-                ></input>
-                <label for="paymentMethod">Paypal</label>
-              </div>
-            </li>
-          </ul> */}
-
           <ul className="form-container">
             <li>
               <h2>Delivery Address</h2>

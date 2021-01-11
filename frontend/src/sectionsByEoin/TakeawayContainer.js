@@ -12,8 +12,6 @@ function TakeawayContainer(props) {
   useEffect(() => {
     axios.get("/api/products/")
       .then(response => {
-        debugger
-        console.log(response);
         setTakeawayData(response.data.products);
       })
       .catch((error) => {

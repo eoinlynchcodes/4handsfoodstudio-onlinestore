@@ -11,11 +11,12 @@ const reviewSchema = new mongoose.Schema(
   },
 );
 const productSchema = new mongoose.Schema({
-  isTakeaway: { type: Boolean, required: true },
+  isTakeaway: { type: Boolean, default: false, required: true },
   name: { type: String, required: false },
+  seller: { type: mongoose.Schema.Types.ObjectID, ref: 'User' },
   image: { type: String, required: false },
   size: { type: String, required: false },
-  price: { type: Number, default: 0, required: false },
+  price: { type: Number, required: false },
   category: { type: String, required: false },
   countInStock: { type: Number, default: 0, required: false },
   description: { type: String, required: false },

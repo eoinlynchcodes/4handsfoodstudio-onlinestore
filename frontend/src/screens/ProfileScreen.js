@@ -59,11 +59,12 @@ export default function ProfileScreen() {
     }
   };
   return (
-    <div>
-      <form className="form" onSubmit={submitHandler}>
-        <div>
+    <div className="form">
+      <form  onSubmit={submitHandler}>
+      <ul className="form-container">
+        <li>
           <h1>User Profile</h1>
-        </div>
+        </li>
         {loading ? (
           <LoadingBox></LoadingBox>
         ) : error ? (
@@ -79,7 +80,7 @@ export default function ProfileScreen() {
                 Profile Updated Successfully
               </MessageBox>
             )}
-            <div>
+            <li>
               <label htmlFor="name">Name</label>
               <input
                 id="name"
@@ -88,8 +89,8 @@ export default function ProfileScreen() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               ></input>
-            </div>
-            <div>
+            </li>
+            <li>
               <label htmlFor="email">Email</label>
               <input
                 id="email"
@@ -98,8 +99,8 @@ export default function ProfileScreen() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               ></input>
-            </div>
-            <div>
+            </li>
+            <li>
               <label htmlFor="password">Password</label>
               <input
                 id="password"
@@ -107,8 +108,8 @@ export default function ProfileScreen() {
                 placeholder="Enter password"
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
-            </div>
-            <div>
+            </li>
+            <li>
               <label htmlFor="confirmPassword">confirm Password</label>
               <input
                 id="confirmPassword"
@@ -116,7 +117,7 @@ export default function ProfileScreen() {
                 placeholder="Enter confirm password"
                 onChange={(e) => setConfirmPassword(e.target.value)}
               ></input>
-            </div>
+            </li>
             {user.isSeller && (
               <>
                 <h2>Seller</h2>
@@ -160,6 +161,7 @@ export default function ProfileScreen() {
             </div>
           </>
         )}
+        </ul>
       </form>
     </div>
   );

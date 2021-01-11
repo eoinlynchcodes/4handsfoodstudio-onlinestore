@@ -14,10 +14,17 @@ footer a{
 .links{
     text-decoration: none;
     color: white;
+}
+
+.newsLetterFooter{
+    padding: 5rem 0rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 5rem 0rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerAlignText{
+    text-align: center;
 }
 
 nav{
@@ -39,7 +46,7 @@ nav{
 
 .subscribeButton{
     background-color: black;
-    color: red
+    color: white;
 }
 
 .widthfifty{
@@ -80,10 +87,14 @@ nav{
         width: 90%;
     }
 
+.centerAlignText{
+    width: 90%;
+    margin: 0 auto;
+}
+    
 
     .footerNavigation{
         width: 100%;
-        background-color: red;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

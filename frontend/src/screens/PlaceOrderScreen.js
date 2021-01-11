@@ -22,9 +22,9 @@ export default function PlaceOrderScreen(props) {
   // cart.taxPrice = toPrice(0.15 * cart.itemsPrice);
   cart.totalPrice = cart.itemsPrice + cart.shippingPrice;
   const dispatch = useDispatch();
-  const placeOrderHandler = () => {
-    dispatch(createOrder({ ...cart, orderItems: cart.cartItems }));
-  };
+  // const placeOrderHandler = () => {
+  //   dispatch(createOrder({ ...cart, orderItems: cart.cartItems }));
+  // };
   useEffect(() => {
     dispatch(createOrder({ ...cart, orderItems: cart.cartItems }));
     if (success) {
@@ -120,7 +120,7 @@ export default function PlaceOrderScreen(props) {
               <li>
                 <button
                   type="button"
-                  onClick={placeOrderHandler}
+                  // onClick={placeOrderHandler}
                   className="primary button fifty block"
                   disabled={cart.cartItems.length === 0}
                 >

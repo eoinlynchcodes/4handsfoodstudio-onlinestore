@@ -103,27 +103,34 @@ productRouter.get(
   })
 );
 
-productRouter.post(
-  '/',
-  isAuth,
-  isSellerOrAdmin,
-  expressAsyncHandler(async (req, res) => {
+productRouter.post('/', async (req, res) => {
     const product = new Product({
-      name: 'sample name ' + Date.now(),
-      seller: req.user._id,
-      image: '/images/p1.jpg',
-      price: 0,
-      category: 'sample category',
-      brand: 'sample brand',
-      countInStock: 0,
-      rating: 0,
-      numReviews: 0,
-      description: 'sample description',
+      isTakeaway: req.body.isTakeaway,
+      name: req.body.name,
+      price: req.body.price,
+      image: req.body.image,
+      size: req.body.size,
+      category: req.body.category,
+      countInStock: req.body.countInStock,
+      description: req.body.description,
+      ingredients: req.body.ingredients,
+      rating: req.body.rating,
+      numReviews: req.body.numReviews,
+      collectionDate: req.body.collectionDate,
+      mainPrice: req.body.mainPrice,
+      mainTitle: req.body.mainTitle,
+      mainItems: req.body.mainItems,
+      coursePrice: req.body.coursePrice,
+      courseTitle: req.body.courseTitle,
+      courseText: req.body.courseText,
+      pickupPoints: req.body.pickupPoints,
+      otherinfo: req.body.otherinfo,
     });
     const createdProduct = await product.save();
     res.send({ message: 'Product Created', product: createdProduct });
-  })
-);
+  });
+
+
 productRouter.put(
   '/:id',
   isAuth,

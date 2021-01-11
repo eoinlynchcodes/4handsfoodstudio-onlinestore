@@ -31,6 +31,55 @@ function Navigation(props) {
   return (
     <div>
       <header className="flexTheHeader">
+        <div className="navmenu">
+          {/* {userInfo ? (
+            <Link className="spacebetween" to="/profile">
+              {userInfo.name}
+            </Link>
+          ) : null} */}
+          {/* {userInfo && userInfo.isAdmin && (
+            <div className="dropdown">
+              <a href="#">Admin</a>
+              <ul className="dropdown-content">
+                <li>
+                  <Link className="spacebetween" to="/orderlist">
+                    Orders
+                  </Link>
+                  <Link className="spacebetween" to="/productlist">
+                    Products
+                  </Link>
+                  <Link className="spacebetween" to="/edittakeaway">
+                    Takeaway
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )} */}
+          {userInfo ? (
+            <Link className="spacebetween" to="/orderlist">
+              Orders
+            </Link>
+          ) : null}
+           {userInfo ? (
+            <Link className="spacebetween" to="/edittakeaway">
+            Takeaway
+          </Link>
+          ) : null}
+          {userInfo ? (
+            <Link className="spacebetween" to="/productlist">
+            Products
+          </Link>
+          ) : null}
+          {userInfo ? (
+            <Link
+              className="spacebetween"
+              to="#signout"
+              onClick={signoutHandler}
+            >
+              Sign Out
+            </Link>
+          ) : null}
+        </div>
         <div className="header">
           <div id="noMargin" className="brand burgerMenu">
             <button onClick={openMenu}>&#9776;</button>
@@ -46,38 +95,17 @@ function Navigation(props) {
 
           <div className="header-links">
             <Link className="" to="/cart/:id?">
-              {/* <img className="trolley" src={trolley32px} />{" "} */}
               <h5>
                 CART
                 {cart.cartItems.length ? (
                   <h5>({cart.cartItems.length})</h5>
                 ) : null}{" "}
               </h5>
-              {/* {cart.cartItems.length ? (
-                  <div className="cartLength">
-                    <p>{cart.cartItems.length}</p>
-                  </div>
-                ) : null} */}
             </Link>
-            <Link to="#signout" onClick={signoutHandler}>
-            Sign Out
-            </Link>
-            {userInfo ? <Link to="/profile">{userInfo.name}</Link> : null}
-            {userInfo && userInfo.isAdmin && (
-              <div className="dropdown">
-                <a href="#">Admin</a>
-                <ul className="dropdown-content">
-                  <li>
-                    <Link to="/orders">Orders</Link>
-                    <Link to="/products">Products</Link>
-                    <Link to="/edittakeaway">Takeaway</Link>
-                  </li>
-                </ul>
-              </div>
-            )}
           </div>
         </div>
         <hr />
+
         <div className="theActualNav">
           <Link to="/">
             <h2>Home</h2>
