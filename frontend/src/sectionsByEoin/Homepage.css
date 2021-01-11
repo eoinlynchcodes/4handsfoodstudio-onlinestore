@@ -147,7 +147,7 @@ html {
 
 #greenButton{
   border-color: #405449;
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
 .sideborders{
@@ -434,6 +434,7 @@ flex-basis: 50%;
 #centeringTakeaway{
   display: flex;
   align-items: center;
+  padding-top: 3rem;
 }
 
 .centreNewsletter{
