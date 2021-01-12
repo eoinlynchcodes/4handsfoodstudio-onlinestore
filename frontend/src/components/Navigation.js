@@ -31,30 +31,7 @@ function Navigation(props) {
   return (
     <div>
       <header className="flexTheHeader">
-        <div className="navmenu">
-          {/* {userInfo ? (
-            <Link className="spacebetween" to="/profile">
-              {userInfo.name}
-            </Link>
-          ) : null} */}
-          {/* {userInfo && userInfo.isAdmin && (
-            <div className="dropdown">
-              <a href="#">Admin</a>
-              <ul className="dropdown-content">
-                <li>
-                  <Link className="spacebetween" to="/orderlist">
-                    Orders
-                  </Link>
-                  <Link className="spacebetween" to="/productlist">
-                    Products
-                  </Link>
-                  <Link className="spacebetween" to="/edittakeaway">
-                    Takeaway
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          )} */}
+        <div className="navmenu">        
           {userInfo ? (
             <Link className="spacebetween" to="/orderlist">
               Orders
